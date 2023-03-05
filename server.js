@@ -33,4 +33,4 @@ app.post('/dream', async (req, res) => { //* /dream *//
     res.send({ image });
 });
 
-app.listen(8080, () => console.log('make art on http://localhost:8080/dream')); //* 8080 *//
+app.listen(process.env.PORT || 443, () => console.log('make art on https://fsa-ig.surge.sh/dream')); //* 8080 *//
