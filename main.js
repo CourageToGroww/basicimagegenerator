@@ -6,7 +6,7 @@ form.addEventListener('submit', async (e) =>{
     e.preventDefault();
     const data = new FormData(form);
 
-    const response = await fetch ('https://fsa-ig.surge.sh/dream', { //*'http://localhost:8080/dream' *\\
+    const response = await fetch ('https://fsa-ig.surge.sh/fsaig', { 
         method: 'POST',
         headers:{
             'Content-Type': 'application/json',

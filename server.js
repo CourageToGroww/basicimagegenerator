@@ -3,10 +3,7 @@ import { Configuration, OpenAIApi } from 'openai';
 import express from 'express';
 import cors from 'cors';
 
-
 dotenv.config();
-
-
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI,
@@ -14,13 +11,11 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-
-
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post('/dream', async (req, res) => { //* /dream *//
+app.post('/fsaig', async (req, res) => {
     const prompt = req.body.prompt;
 
     const aiResponse = await openai.createImage({
@@ -33,4 +28,4 @@ app.post('/dream', async (req, res) => { //* /dream *//
     res.send({ image });
 });
 
-app.listen(process.env.PORT || 443, () => console.log('make art on https://fsa-ig.surge.sh/dream')); //* 8080 *//
+app.listen(process.env.PORT || 8080, () => console.log('make art on https://fsa-ig.surge.sh/fsaig')); //* 8080 *//
