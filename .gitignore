@@ -1,5 +1,7 @@
 git pus.env
 
+.env
+
 # Logs
 logs
 *.log
