@@ -28,4 +28,4 @@ app.post('/fsaig', async (req, res) => {
     res.send({ image });
 });
 
-app.listen(process.env.PORT || 8080, () => console.log('make art on https://fsa-ig.surge.sh/fsaig')); //* 8080 *//
+app.listen(process.env.PORT || 443, () => console.log('make art on https://fsa-ig.surge.sh/fsaig')); //* 8080 *//
