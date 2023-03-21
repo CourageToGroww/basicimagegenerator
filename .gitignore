@@ -2,7 +2,7 @@ git pus.env
 
 .env
 *.env
-
+CNAME
 # Logs
 logs
 *.log
